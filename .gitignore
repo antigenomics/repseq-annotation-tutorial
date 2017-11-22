@@ -1,3 +1,10 @@
+# Tutorial
+datasets/SRR*
+datasets/metadata.txt
+
+# Mac
+.DS_Store
+
 # History files
 .Rhistory
 .Rapp.history

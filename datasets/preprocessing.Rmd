@@ -1,0 +1,28 @@
+---
+title: "Pre-processing"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(data.table)
+library(dplyr)
+```
+
+```{r}
+df.meta = fread("metadata.txt")
+
+preproc = function(fname) {
+  fread(fname) %>%
+    group_by(v, j, cdr3aa) %>%
+    summarise(count = sum(count)) %>%
+    arrange(-count)
+}
+
+for (i in 1:nrow(df.meta)) {
+  fwrite(preproc(df.meta$file_name[i]), paste0("s", i, ".txt"), sep = "\t")
+}
+```
