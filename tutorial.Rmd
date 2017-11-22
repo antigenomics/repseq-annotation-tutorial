@@ -1,8 +1,9 @@
 ---
 title: "Immune repertoire forensics: a RepSeq data analysis tutorial"
+author: "Mikhail Shugay"
+date: "1 December 2017"
 output:
   pdf_document: default
-  html_document: default
 ---
 
 ```{r setup, include=FALSE}
@@ -37,7 +38,9 @@ The following basic repertoire characteristics will be considered:
 * `Chao1 index`, the estimate of total diversity (including unobserved species), $D_{Chao} = D_{obs} + \frac{c_1}{2c_2}$, where $c_{1,2}$ is the number of clonotypes supported by $1$ or $2$ reads.
 * `Normalized Shannon index`, the entropy of clonotype frequency distribution, $D_{Shannon}=-\frac{1}{\log D_{obs}}\sum f \log f$.
 
-**Segment usage**, the frequency of clonotypes having a specific Variable segment. These frequency profiles contain information about the VDJ rearrangement profile and CDR3-independent selection. Variable segments are known to interact with MHC molecule itself, as well as with the presented peptides via CDR1/2. 
+**Segment usage**, the profile of frequencies of clonotypes having a specific Variable segment ($p_n(v_i)$, where $n$ is the sample id and $i$ is the V segment id). These frequency profiles contain information about the VDJ rearrangement profile and CDR3-independent selection. Variable segments are known to interact with MHC molecule itself, as well as with the presented peptides via CDR1/2. Here we'll use the Pearson correlation coefficient to compare two V usage profiles, $\rho(p_n,p_m)$.
+
+However, a better measure for this kind of variables is the Jensen-Shannon divergence: $D_{JS}(p_n,p_m)=0.5D_{KL}(p_n,q)+0.5D_{KL}(p_m,q)$, where $q=0.5p_n+0.5p_m$ and $D_{KL}(p,q)=\sum_ip(v_i)\log\frac{p(v_i)}{q(v_i)}$.
 
 **Repertoire overlap** computed as $s_{nm}=\sum_i\sqrt{f^{(n)}_if^{(m)}_i}$ (Bhattacharyya similarity measure), where $f^{(n)}_i$ is the frequency of $i$th clonotype in sample $n$, $f^{(n)}_i=0$ if the clonotype is absent.
 
