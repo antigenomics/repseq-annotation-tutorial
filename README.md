@@ -22,6 +22,8 @@ decode relevant characteristics from the RepSeq data using relatively simple bio
 Given a set of unlabeled samples from different donors, T-cell subpopulations and phenotypes, we can reliably infer the
 sample origin and even some properties of the immunological status of a (relatively) healthy donor.
 
+This analysis uses two samples from [Qi et al. PNAS 2014](http://www.pnas.org/content/111/36/13139.short) study, sample labels and TCR nucleotide sequences were removed.
+
 ## Pre-requisites / setup
 
 This tutorial should run fine on both Mac, Linux and Windows. The setup is the following:
@@ -56,4 +58,4 @@ After obtaining the results summarizing all 16 samples you should be able to lab
 2. Cell phenotype, ``memory`` or ``naive``
 3. Cell subset, ``CD4`` or ``CD8``
 4. Donor CMV status, ``cmv+`` or ``cmv-``
-5. Donor HLA allele, in ``HLA-X*XX`` format (where applicable)
+5. Donor HLA allele, in ``X*XX`` format (where applicable)
