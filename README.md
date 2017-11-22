@@ -2,6 +2,8 @@
 
 # Immune repertoire forensics: a RepSeq data analysis tutorial
 
+![Splash](splash.png)
+
 ## Introduction
 
 This tutorial covers some basic aspects of Immune Repertoire Sequencing (RepSeq) data analysis focused on T-cell receptor (TCR) repertoires:
