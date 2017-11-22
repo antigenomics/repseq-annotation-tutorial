@@ -1,3 +1,5 @@
+[![CCBYSA](https://licensebuttons.net/l/by-sa/4.0/88x31.png)](https://creativecommons.org/licenses/by-sa/4.0/)
+
 # Immune repertoire forensics: a RepSeq data analysis tutorial
 
 ## Introduction
@@ -33,7 +35,7 @@ install.packages(c("data.table","dplyr","reshape2","ggplot2","NMF","scales","for
 You can also install these packages manually from the **Tools -> Install packages..** menu.
 
 > N.B. As the tutorial relies on widely used R packages, if you encounter any problems during installation
-the best option for you would be to goodle (or check StackOverflow) for the error message and try to fix it on your own.
+the best option for you would be to google (or check StackOverflow) for the error message and try to fix it on your own.
 > For example most problems with Mac are solved by installing the missing Xcode software.
 
 3. Get yourself familiar with RStudio/R markdown by watching this [video](https://www.youtube.com/watch?v=TJmNvfhLCoI).
