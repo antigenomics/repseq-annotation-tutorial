@@ -22,7 +22,7 @@ decode relevant characteristics from the RepSeq data using relatively simple bio
 Given a set of unlabeled samples from different donors, T-cell subpopulations and phenotypes, we can reliably infer the
 sample origin and even some properties of the immunological status of a (relatively) healthy donor.
 
-This analysis uses two samples from [Qi et al. PNAS 2014](http://www.pnas.org/content/111/36/13139.short) study, sample labels and TCR nucleotide sequences were removed.
+This analysis uses 16 samples of 10,000 random reads from two donors from [Qi et al. PNAS 2014](http://www.pnas.org/content/111/36/13139.short) study (sample labels and TCR nucleotide sequences are removed).
 
 ## Pre-requisites / setup
 
