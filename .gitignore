@@ -3,7 +3,8 @@ datasets/SRR*
 datasets/metadata.txt
 slides/*
 !slides/slides.tex
-!slides/slides.pdf
+!slides/*.png
+!slides/*.pdf
 
 # Mac
 .DS_Store
