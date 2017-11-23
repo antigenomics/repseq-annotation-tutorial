@@ -137,7 +137,48 @@ Open the \texttt{tutorial.Rmd} in RStudio, it can be found in the root folder of
 
 \section{The assignment}
 
-\begin{frame}{...}
+\begin{frame}{The assignment}
+Using the analysis results we've obtained we need to assign feature labels to each sample. Namely, you need to fill the table with the following structure:
+\begin{table}[h!]
+  \begin{center}
+    \begin{tabular}{c|c|c|c|c}
+      \textbf{sample} & \textbf{donor} & \textbf{subset} & \textbf{phenotype} & \textbf{CMVstatus} \\
+      \hline
+      s1 & D1 & CD4 & memory & CMV- \\
+      s2 & D2 &   & naive & CMV+ \\
+      s3 & D1 & CD8 & naive & CMV- \\
+      ... & ... & ... & ... & ... \\
+    \end{tabular}
+  \end{center}
+\end{table}
+\end{frame}
+
+\begin{frame}{The assignment}
+Table filling rules:
+\begin{itemize}
+\item Column names should match those on previous slide
+\item Sample id should be one of $s_1..s_{16}$
+\item Two distinct donor IDs should be used, naming doesn't matter
+\item Subset should be either \textbf{CD4} or \textbf{CD8}
+\item Phenotype should be either \textbf{memory} or \textbf{naive}
+\item CMV status should be either \textbf{CMV+} or \textbf{CMV-}
+\item Unknown/ambiguous fields should be left blank
+\end{itemize}
+\end{frame}
+
+\begin{frame}{The assignment}
+Send me filled tables as plain text tab-delimited files, the file name should be in format \texttt{your-name.assignment.txt}
+\end{frame}
+
+\begin{frame}{Final remarks}
+\begin{LARGE}
+\begin{center}
+Thanks for your attention!\\~\
+\end{center}
+\end{LARGE}
+
+
+These slides and a PDF file containing the analysis results can be found in \texttt{slides/} and root folders of the data and code bundle.
 \end{frame}
 
 \end{document}
