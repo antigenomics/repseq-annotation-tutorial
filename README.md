@@ -59,3 +59,7 @@ After obtaining the results summarizing all 16 samples you should be able to lab
 3. Cell subset, ``CD4`` or ``CD8``
 4. Donor CMV status, ``cmv+`` or ``cmv-``
 5. Donor HLA allele, in ``X*XX`` format (where applicable)
+
+## Slides
+
+The slides can be found [here](https://github.com/antigenomics/repseq-forensics-tutorial/blob/master/slides/slides.pdf).

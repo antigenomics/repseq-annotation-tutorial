@@ -77,9 +77,8 @@ sample_names = paste0("s", 1:16)
 
 datasets = as.list(paste0("datasets/", sample_names, ".txt")) %>%
   # read dataset and append name
-  mclapply(function(x) fread(x) %>% 
-             mutate(sample_id = str_split_fixed(x, "[./]", 3)[2]),
-           mc.cores = 4) %>%
+  lapply(function(x) fread(x) %>% 
+             mutate(sample_id = str_split_fixed(x, "[./]", 3)[2])) %>%
   # bind together
   rbindlist() %>%
   # compute frequencies

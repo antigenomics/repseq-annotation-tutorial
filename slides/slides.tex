@@ -153,7 +153,7 @@ Using the analysis results we've obtained we need to assign feature labels to ea
 \end{table}
 \end{frame}
 
-\begin{frame}{The assignment}
+\begin{frame}{Details}
 Table filling rules:
 \begin{itemize}
 \item Column names should match those on previous slide
@@ -166,7 +166,15 @@ Table filling rules:
 \end{itemize}
 \end{frame}
 
-\begin{frame}{The assignment}
+\begin{frame}{A hint}
+While you can unambiguously assign CD4/8 and memory/naive labels, as well as point out biological replicates of the same sample, assigning donor labels is tricky.\\~\
+
+First, it is impossible to link CD4-CD8 cells of the same donor. Same for CMV status, that is unambiguous only for CD8+ memory T-cells. Therefore I expect that you mark donors in the way they will distinguish samples/replicas coming from the same and different donors.\\~\
+
+I.e. there is no problem if donor labels are swapped between CD4 and CD8 T-cells as far as they point to distinct donors for CD4 or CD8 T-cells coming from different donor and the same donor for replicas.
+\end{frame}
+
+\begin{frame}{Feedback}
 Send me filled tables as plain text tab-delimited files, the file name should be in format \texttt{your-name.assignment.txt}
 \end{frame}
 
@@ -178,7 +186,7 @@ Thanks for your attention!\\~\
 \end{LARGE}
 
 
-These slides and a PDF file containing the analysis results can be found in \texttt{slides/} and root folders of the data and code bundle.
+These slides and a PDF file containing compiled analysis results can be found in \texttt{slides/} and root folders of the data and code bundle.
 \end{frame}
 
 \end{document}
