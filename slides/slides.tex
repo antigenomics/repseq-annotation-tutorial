@@ -24,7 +24,7 @@
 \title{Immune repertoire forensics}
 \subtitle{A RepSeq data analysis tutorial}
 \institute[Skoltech]{\texttt {Skoltech, MA03172 course [Term 2, 2017-2018]}}
-\date{December 1, 2017}
+\date{December 5, 2017}
 
 \begin{document}
 
@@ -105,6 +105,43 @@ We finally get clonotype frequency tables that look like
 \end{center}
 \end{frame}
 
+\section{Basic RepSeq analysis methods}
+
+\begin{frame}{Diversity analysis}
+Inspired by species richness/diversity analysis in ecology. 
+
+Useful to tell naive T-cell samples from antigen-experienced T-cells containing expanded clones.
+
+\begin{center}
+\includegraphics[scale=0.25]{p10}
+\end{center}
+\tiny{Shugay et al. NAR 2017}
+\end{frame}
+
+\begin{frame}{Variable segment usage}
+Similar to conventional gene expression analysis: segment profile can be useful for distinguishing different subsets of T-cells.
+\begin{center}
+\includegraphics[scale=0.3]{p11}
+\end{center}
+\tiny{Izraelson et al. Immunology 2017}
+\end{frame}
+
+\begin{frame}{Clonotype sharing}
+The overlap/co-incidence of hypervariable CDR3 region sequences in different samples. Useful for determining sample origin and comparative analysis of immune repertoires in general.
+\begin{center}
+\includegraphics[scale=0.35]{p12}
+\end{center}
+\tiny{Britanova et al. J Immunol 2016}
+\end{frame}
+
+\begin{frame}{TCR sequence annotation}
+Using a curated database of TCRs with known antigen specificity (VDJdb, \url{vdjdb.cdr3.net}). Directly searching for specific TCRs/determining the specificity profile of a repertoire.
+\begin{center}
+\includegraphics[scale=0.35]{p13}
+\end{center}
+\tiny{Shugay et al. NAR 2017}
+\end{frame}
+
 \section{Getting started}
 
 \begin{frame}{Downloading data}
@@ -128,19 +165,6 @@ Open the \texttt{tutorial.Rmd} in RStudio, it can be found in the root folder of
 \end{frame}
 
 \section{Interactive part}
-
-\begin{frame}{Basic RepSeq analysis approaches}
-We're going to perform 4 types of TCR RepSeq data analysis:
-\begin{itemize}
-\item \textbf{Diversity analysis} is useful to tell naive T-cells having a rather uniform clonal frequency distribution from antigen-experienced T-cells which display a number of highly expanded (high frequency) clones
-\pause
-\item \textbf{Variable segment usage} profile can be useful for distinguishing different subsets of T-cells: different subsets typically have a characteristic pattern of preferred V segments.
-\pause
-\item \textbf{Clonotype sharing} - the overlap of hypervariable CDR3 region sequences, generally useful for determining sample origin.
-\pause
-\item \textbf{TCR sequence annotation} using a curated database of TCRs with known antigen specificity.
-\end{itemize} 
-\end{frame}
 
 \begin{frame}{Interactive part}
 \begin{center}
