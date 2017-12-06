@@ -1,6 +1,6 @@
 [![CCBYSA](https://licensebuttons.net/l/by-sa/4.0/88x31.png)](https://creativecommons.org/licenses/by-sa/4.0/)
 
-# Immune repertoire forensics: a RepSeq data analysis tutorial
+# Immune repertoire annotation: a RepSeq data analysis tutorial
 
 ![Splash](splash.png)
 
@@ -19,8 +19,10 @@ This tutorial covers some basic aspects of Immune Repertoire Sequencing (RepSeq)
 The main idea of this tutorial is to demonstrate the immense amount of information encoded in immune repertoires and the ability to
 decode relevant characteristics from the RepSeq data using relatively simple bioinformatic/data mining methods.
 
-Given a set of unlabeled samples from different donors, T-cell subpopulations and phenotypes, we can reliably infer the
+Given a set of unlabeled samples from different donors (generated as shown below), T-cell subpopulations and phenotypes, we can reliably infer the
 sample origin and even some properties of the immunological status of a (relatively) healthy donor.
+
+![Splash](samples.png)
 
 This analysis uses 16 samples of 10,000 random reads from two donors from [Qi et al. PNAS 2014](http://www.pnas.org/content/111/36/13139.short) study (sample labels and TCR nucleotide sequences are removed).
 
