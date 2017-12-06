@@ -26,6 +26,10 @@ Samples are named $s_1\cdots s_{16}$, the metadata is missing.
 
 > Clonotype tables were built using 10000 random reads taken from real samples from [Qi et al. PNAS 2014](http://www.pnas.org/content/111/36/13139.short) study, CDR3 nucleotide sequences and other general information was discarded.
 
+Dataset layout is shown in Figure 1 below.
+
+![**Dataset layout.** You are going to perform comparative analysis of immune repertoires and retrieve sample labels.](samples.png)
+
 ## Analysis outline
 
 The main goal is to recover sample metadata, i.e. label samples with donor, population and phenotype where possible.
