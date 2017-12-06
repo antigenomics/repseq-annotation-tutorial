@@ -65,3 +65,7 @@ After obtaining the results summarizing all 16 samples you should be able to lab
 ## Slides
 
 The slides can be found [here](https://github.com/antigenomics/repseq-forensics-tutorial/blob/master/slides/slides.pdf).
+
+## P.S.
+
+If you're interested in learning how to work with our standalone Java tools, check out [this repository](https://github.com/mikessh/repseq-tutorial).
