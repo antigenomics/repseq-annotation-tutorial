@@ -1,7 +1,7 @@
 ---
-title: "Immune repertoire forensics: a RepSeq data analysis tutorial"
+title: "Immune repertoire annotation: a RepSeq data analysis tutorial"
 author: "Mikhail Shugay"
-date: "1 December 2017"
+date: "5 December 2017"
 output:
   pdf_document: default
 ---
